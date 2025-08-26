@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leaf Area Calculator</title>
+</head>
+<body>
+    <h1>Leaf Area Calculator</h1>
+    <form action="/calculate" method="post" enctype="multipart/form-data">
+        <label>Length: <input type="number" step="any" name="length" required></label><br>
+        <label>Width: <input type="number" step="any" name="width" required></label><br>
+        <label>Image: <input type="file" name="image" accept="image/*" required></label><br>
+        <label><input type="checkbox" name="fenestrated"> Fenestrated</label><br>
+        <label><input type="checkbox" name="variegated"> Variegated</label><br>
+        <button type="submit">Calculate</button>
+    </form>
+</body>
+</html>
